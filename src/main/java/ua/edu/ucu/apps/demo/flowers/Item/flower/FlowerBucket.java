@@ -1,6 +1,7 @@
-package ua.edu.ucu.apps.demo.flowers.Item;
+package ua.edu.ucu.apps.demo.flowers.Item.flower;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+import ua.edu.ucu.apps.demo.flowers.Item.Item;
 
 import java.util.ArrayList;
 import java.util.List;

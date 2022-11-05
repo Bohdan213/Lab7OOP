@@ -1,4 +1,4 @@
-package ua.edu.ucu.apps.demo.flowers.Item;
+package ua.edu.ucu.apps.demo.flowers.Item.flower;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,7 +11,7 @@ import java.util.List;
 public class FlowerController {
     @GetMapping
     public List<Flower> hello() {
-        return List.of(new Flower("green", 13, 14),
-                new Flower("orange", 4323, 1234));
+        return List.of(new Flower(FlowerType.CACTUS),
+                new Flower(FlowerType.CHAMOMILE));
     }
 }

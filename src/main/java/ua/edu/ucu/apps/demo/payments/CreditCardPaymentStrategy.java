@@ -1,7 +1,12 @@
 package ua.edu.ucu.apps.demo.payments;
 
 public class CreditCardPaymentStrategy implements Payment{
-    public double pay(double price) {
-        return price;
+    public void pay(double price) {
+        return ;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString();
     }
 }
