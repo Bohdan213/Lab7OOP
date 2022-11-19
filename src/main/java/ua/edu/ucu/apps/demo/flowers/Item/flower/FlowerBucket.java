@@ -9,11 +9,11 @@ import java.util.List;
 @Getter
 @AllArgsConstructor
 public class FlowerBucket extends Item {
+    private String description;
     private final List<Flower> bucket = new ArrayList<>();
     public void add(Flower flower) {
         this.bucket.add(flower);
     }
-
     public double price() {
         double price = 0;
         for (Flower flowerPack : bucket) {
