@@ -21,7 +21,7 @@ public class OrderTest {
     public void test() {
         Flower flower1 = new Flower(FlowerType.CACTUS);
         Flower flower2 = new Flower(FlowerType.CHAMOMILE);
-        FlowerBucket bucket = new FlowerBucket("Bucket");
+        FlowerBucket bucket = new FlowerBucket();
         bucket.add(flower1);
         bucket.add(flower2);
         Flower flower3 = new Flower(FlowerType.CACTUS);
@@ -35,5 +35,6 @@ public class OrderTest {
         Assertions.assertEquals(delivery, order.getDelivery());
         Assertions.assertEquals(payment, order.getPayment());
         Assertions.assertEquals(order.calculateTotalPrice(), 220);
+
     }
 }
